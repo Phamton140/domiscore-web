@@ -3,49 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DomiScore - DomiScore</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-    h1 { border-bottom: 2px solid #1A237E; padding-bottom: 8px; }
-    h2 { color: #1A237E; margin-top: 32px; }
-    a { color: #1A237E; }
-    nav { margin-bottom: 24px; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    .hero { text-align: center; padding: 32px 0; }
-    .button { display: inline-block; background: #1A237E; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; }
-    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; color: #777; font-size: 14px; }
-  </style>
+  <title>DomiScore - El Marcador Premium de Dominó</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="privacy.html">Privacidad</a>
-    <a href="terms.html">Términos</a>
-  </nav>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-dot"></div>
+        DomiScore
+      </a>
+      <nav>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="privacy.html">Privacidad</a>
+        <a href="terms.html">Términos</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="hero">
-    <h1>DomiScore</h1>
-    <p>La forma más limpia, rápida y profesional de llevar el control de puntos en tus partidas de dominó.</p>
-    <p><a href="#contacto" class="button">Contáctanos</a></p>
-  </div>
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Anota tus partidas de dominó como un <span>Profesional</span></h1>
+      <p class="tagline">La aplicación definitiva de alta visibilidad, con persistencia local y funciones inteligentes para corregir anotaciones erróneas sin esfuerzo.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://play.google.com/store" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Google Play Store
+        </a>
+        <a href="#contacto" class="btn btn-secondary">Soporte técnico</a>
+      </div>
+    </section>
 
-  <h2>Sobre la aplicación</h2>
-  <p>DomiScore está diseñada para aquellos que aman el dominó y odian las complicaciones. Olvídate de buscar lápiz y papel o usar aplicaciones desactualizadas. DomiScore te ofrece una experiencia fluida, moderna y sin distracciones.</p>
+    <!-- Showcase Cards -->
+    <div class="showcase-cards">
+      <div class="showcase-card team-a">
+        <h4>Nosotros</h4>
+        <div class="score">205</div>
+        <span style="font-size: 11px; opacity: 0.8; font-weight: bold; letter-spacing: 0.5px;">2 VICTORIAS</span>
+      </div>
+      <div class="showcase-card team-b">
+        <h4>Ellos</h4>
+        <div class="score">180</div>
+        <span style="font-size: 11px; opacity: 0.8; font-weight: bold; letter-spacing: 0.5px;">1 VICTORIA</span>
+      </div>
+    </div>
 
-  <h3>Características principales</h3>
-  <ul>
-    <li><strong>Interfaz minimalista:</strong> Diseño moderno y sin elementos innecesarios.</li>
-    <li><strong>100% Local:</strong> No requiere internet. Funciona donde sea que estés jugando.</li>
-    <li><strong>Privacidad total:</strong> No recopilamos ni enviamos tu información.</li>
-    <li><strong>Rápida y responsiva:</strong> Optimizada para dispositivos móviles.</li>
-  </ul>
+    <!-- Features Section -->
+    <section class="features">
+      <h2 class="section-title">¿Qué hace a DomiScore diferente?</h2>
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">👁️</div>
+          <h3>Alta Visibilidad</h3>
+          <p>Diseñada con números gigantes y contrastes limpios (Light Mode) para que todos los jugadores en la mesa puedan ver el marcador a la distancia sin forzar la vista.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">📳</div>
+          <h3>Alerta y Auto-Cierre</h3>
+          <p>Ejecuta una vibración de 3 segundos al ganar. El diálogo de victoria se cierra solo automáticamente sincronizado con la vibración, actualizando los contadores de inmediato.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">⏳</div>
+          <h3>Historial y Restauración</h3>
+          <p>¿Anotaron mal la mano que los hizo ganar? Accede al historial de la partida anterior en un toque para restaurarla, revertir la victoria y corregir el puntaje.</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon">💾</div>
+          <h3>100% Local y Privado</h3>
+          <p>Tus datos se guardan de forma segura en tu teléfono (SharedPreferences). Funciona sin conexión a internet y respeta totalmente tu privacidad.</p>
+        </div>
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon">✏️</div>
+          <h3>Nombres Personalizables</h3>
+          <p>Edita el nombre de los bandos (hasta 13 caracteres) tocando directamente sobre su texto. La interfaz se adapta para evitar desbordamientos visuales.</p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Meta de Puntos Flexible</h3>
+          <p>Configura la meta de la partida (por defecto 200 pts) de manera rápida a través de un diálogo que despliega el teclado numérico automáticamente.</p>
+        </div>
+      </div>
+    </section>
 
-  <h2 id="contacto">¿Tienes dudas o sugerencias?</h2>
-  <p>Estoy comprometido con la calidad de DomiScore. Si necesitas soporte o tienes alguna recomendación para mejorarla, no dudes en escribirme.</p>
-  <p><a href="mailto:genesismsf@gmail.com" class="button">Enviar Correo</a></p>
+    <!-- Contact Support Section -->
+    <section class="support-section" id="contacto">
+      <h2>Soporte y Recomendaciones</h2>
+      <p>Nos encanta el dominó y queremos que DomiScore sea perfecta. Si tienes problemas, sugerencias de diseño o ideas para futuras mejoras, escríbenos directamente.</p>
+      <a href="mailto:genesismsf@gmail.com" class="btn btn-contact">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        Enviar Correo de Soporte
+      </a>
+    </section>
+  </main>
 
-  <footer>
-    <p>© 2026 Melquisedec Sarfeliz. Todos los derechos reservados.</p>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Melquisedec Sarfeliz. Desarrollador Independiente de DomiScore. Todos los derechos reservados.</p>
+      <p style="margin-top: 8px; font-size: 11px; opacity: 0.6;">Android y Google Play son marcas registradas de Google LLC.</p>
+    </div>
   </footer>
 </body>
 </html>

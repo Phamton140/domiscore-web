@@ -4,63 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad - DomiScore</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-    h1 { border-bottom: 2px solid #1A237E; padding-bottom: 8px; }
-    h2 { color: #1A237E; margin-top: 32px; }
-    a { color: #1A237E; }
-    nav { margin-bottom: 24px; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; color: #777; font-size: 14px; }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="privacy.html">Privacidad</a>
-    <a href="terms.html">Términos</a>
-  </nav>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-dot"></div>
+        DomiScore
+      </a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="privacy.html" class="active">Privacidad</a>
+        <a href="terms.html">Términos</a>
+      </nav>
+    </div>
+  </header>
 
-  <h1>Política de Privacidad - DomiScore</h1>
+  <main class="container">
+    <article class="policy-page">
+      <h1>Política de Privacidad</h1>
+      <span class="policy-date">Última actualización: 13 de julio de 2026</span>
 
-  <p><strong>Última actualización:</strong> 12 de julio de 2026</p>
+      <p>En <strong>DomiScore</strong>, desarrollada por <strong>Melquisedec Sarfeliz</strong>, nos tomamos muy en serio tu privacidad. Esta política explica de manera clara y transparente cómo manejamos la información cuando utilizas la aplicación móvil.</p>
 
-  <p>En <strong>DomiScore</strong>, desarrollada por <strong>Melquisedec Sarfeliz</strong>, nos tomamos muy en serio tu privacidad. Esta política explica de manera clara y transparente cómo manejamos la información cuando utilizas la aplicación.</p>
+      <h2>1. No recopilamos datos personales</h2>
+      <p>DomiScore está diseñada para funcionar íntegramente en tu dispositivo. <strong>No solicitamos, recopilamos, almacenamos ni transmitimos ningún tipo de información personal</strong> o identificable de nuestros usuarios directamente en nuestros servidores. No es necesario crear cuentas ni proporcionar nombres, correos electrónicos o números de teléfono para utilizar la app.</p>
 
-  <h2>1. No recopilamos datos personales</h2>
-  <p>DomiScore está diseñada para funcionar íntegramente en tu dispositivo. <strong>No solicitamos, recopilamos, almacenamos ni transmitimos ningún tipo de información personal</strong> o identificable de nuestros usuarios directamente en nuestros servidores. No es necesario crear cuentas ni proporcionar nombres, correos electrónicos o números de teléfono para utilizar la app.</p>
+      <h2>2. Funcionamiento local</h2>
+      <p>Todo el registro de puntos y los nombres de equipos o jugadores que ingreses en la aplicación se almacenan únicamente en la memoria local de tu dispositivo mediante las preferencias del sistema Android (SharedPreferences). Al desinstalar la aplicación, toda la información local se elimina por completo.</p>
 
-  <h2>2. Funcionamiento local</h2>
-  <p>Todo el registro de puntos y los nombres de equipos o jugadores que ingreses en la aplicación se almacenan únicamente en la memoria local de tu dispositivo mediante las preferencias del sistema Android (SharedPreferences). Al desinstalar la aplicación, toda la información local se elimina por completo.</p>
+      <h2>3. No compartimos información personal</h2>
+      <p>Dado que no recopilamos datos personales de los usuarios, no compartimos, vendemos, alquilamos ni transferimos información personal a terceros. Tu uso de la aplicación es completamente privado en ese aspecto.</p>
 
-  <h2>3. No compartimos información personal</h2>
-  <p>Dado que no recopilamos datos personales de los usuarios, no compartimos, vendemos, alquilamos ni transferimos información personal a terceros. Tu uso de la aplicación es completamente privado en ese aspecto.</p>
+      <h2>4. Publicidad y servicios de anuncios (Banners)</h2>
+      <p>Para mantener la aplicación gratuita y financiar su desarrollo, DomiScore muestra publicidad en formato de <strong>banner ubicado en la parte inferior de la pantalla</strong>. Nos comprometemos a <strong>no mostrar anuncios intrusivos de pantalla completa (intersticiales)</strong> que interrumpan la experiencia de uso.</p>
+      <p>Estos anuncios son provistos por redes publicitarias de terceros (como Google AdMob). Para cumplir con este propósito, estas redes pueden recopilar y procesar identificadores del dispositivo (como el ID de publicidad de Android) para la personalización y/o medición del rendimiento de los anuncios de acuerdo con sus propias políticas de privacidad.</p>
 
-  <h2>4. Publicidad y servicios de anuncios (Banners)</h2>
-  <p>Para mantener la aplicación gratuita y financiar su desarrollo, DomiScore muestra publicidad en formato de <strong>banner ubicado en la parte inferior de la pantalla</strong>. Nos comprometemos a <strong>no mostrar anuncios intrusivos de pantalla completa (intersticiales)</strong> que interrumpan la experiencia de uso.</p>
-  <p>Estos anuncios son provistos por redes publicitarias de terceros (como Google AdMob). Para cumplir con este propósito, estas redes pueden recopilar y procesar identificadores del dispositivo (como el ID de publicidad de Android) para la personalización y/o medición del rendimiento de los anuncios de acuerdo con sus propias políticas de privacidad.</p>
+      <h2>5. Permisos de la aplicación</h2>
+      <p>DomiScore únicamente solicita los permisos del sistema operativo necesarios para su correcto funcionamiento:</p>
+      <ul>
+        <li><strong>Vibración (VIBRATE):</strong> se utiliza exclusivamente para emitir una vibración breve o prolongada de celebración cuando un equipo alcanza la meta de puntos y gana la partida.</li>
+        <li><strong>Acceso a Internet (INTERNET y ACCESS_NETWORK_STATE):</strong> requeridos de forma exclusiva para la conexión con los servidores de publicidad, descargar y visualizar los anuncios de tipo banner.</li>
+      </ul>
 
-  <h2>5. Permisos de la aplicación</h2>
-  <p>DomiScore únicamente solicita los permisos del sistema operativo necesarios para su correcto funcionamiento:</p>
-  <ul>
-    <li><strong>Vibración (VIBRATE):</strong> se utiliza exclusivamente para emitir una vibración breve de celebración cuando un equipo alcanza la meta de puntos y gana la partida.</li>
-    <li><strong>Acceso a Internet (INTERNET y ACCESS_NETWORK_STATE):</strong> requeridos de forma exclusiva para la conexión con los servidores de publicidad, descargar y visualizar los anuncios de tipo banner.</li>
-  </ul>
+      <h2>6. Servicios de terceros</h2>
+      <p>La aplicación integra SDKs de redes de publicidad de terceros (como Google AdMob) con el fin de gestionar y mostrar los anuncios banner indicados. Estos servicios pueden utilizar herramientas de software (cookies, identificadores móviles, etc.) para recopilar información técnica no personal. Te recomendamos leer la política de privacidad de los proveedores correspondientes para mayor información.</p>
 
-  <h2>6. Servicios de terceros</h2>
-  <p>La aplicación integra SDKs de redes de publicidad de terceros (como Google AdMob) con el fin de gestionar y mostrar los anuncios banner indicados. Estos servicios pueden utilizar herramientas de software (cookies, identificadores móviles, etc.) para recopilar información técnica no personal. Te recomendamos leer la política de privacidad de los proveedores correspondientes para mayor información.</p>
+      <h2>7. Privacidad de menores (Edad recomendada +13)</h2>
+      <p>DomiScore está clasificada para usuarios de <strong>13 años en adelante (+13)</strong>. La aplicación no está dirigida a menores de 13 años y no recopilamos intencionadamente datos de menores. Esta declaración se realiza conforme a las directrices y políticas de contenido para tiendas de aplicaciones como Google Play Console.</p>
 
-  <h2>7. Privacidad de menores (Edad recomendada +13)</h2>
-  <p>DomiScore está clasificada para usuarios de <strong>13 años en adelante (+13)</strong>. La aplicación no está dirigida a menores de 13 años y no recopilamos intencionadamente datos de menores. Esta declaración se realiza conforme a las directrices y políticas de contenido para tiendas de aplicaciones como Google Play Console.</p>
+      <h2>8. Cambios en esta Política de Privacidad</h2>
+      <p>Podemos actualizar esta política ocasionalmente para reflejar cambios en la aplicación o por razones legales. Te recomendamos revisar esta página de vez en cuando. Cualquier cambio será efectivo inmediatamente después de su publicación en esta página, indicando la nueva fecha de "Última actualización".</p>
 
-  <h2>8. Cambios en esta Política de Privacidad</h2>
-  <p>Podemos actualizar esta política ocasionalmente para reflejar cambios en la aplicación o por razones legales. Te recomendamos revisar esta página de vez en cuando. Cualquier cambio será efectivo inmediatamente después de su publicación en esta página, indicando la nueva fecha de "Última actualización".</p>
+      <h2>9. Contacto</h2>
+      <p>Si tienes alguna pregunta sobre nuestra Política de Privacidad, puedes escribirme a: <a href="mailto:genesismsf@gmail.com">genesismsf@gmail.com</a>.</p>
+    </article>
+  </main>
 
-  <h2>9. Contacto</h2>
-  <p>Si tienes alguna pregunta sobre nuestra Política de Privacidad, puedes escribirme a: <a href="mailto:genesismsf@gmail.com">genesismsf@gmail.com</a>.</p>
-
-  <footer>
-    <p>© 2026 Melquisedec Sarfeliz. Todos los derechos reservados.</p>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Melquisedec Sarfeliz. Desarrollador Independiente de DomiScore. Todos los derechos reservados.</p>
+    </div>
   </footer>
 </body>
 </html>
